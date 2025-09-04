@@ -28,3 +28,21 @@ for name in favorite_languages.keys():
 
 if 'erin' not in favorite_languages.keys():
     print("Erin, please take our poll!")
+
+
+## Looping Through a Dictionarie in a Particular Order
+
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+
+## Looping Through All Values in a Dictionarie
+
+print("The following languages have been mentioned: ")
+for language in favorite_languages.values():
+    print(language.title())
+
+## Set function for repeting values in a dictionary
+
+print("The following languages have been mentioned: ")
+for language in set(favorite_languages.values()):
+    print(language.title())
